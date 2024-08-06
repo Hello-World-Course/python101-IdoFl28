@@ -8,7 +8,7 @@ name_input = input("Hello, whats your name: \n>")
 if len(name_input) > 2:
     name = name_input
 else:
-    print("Your name is too short!")
+    print("Your name is too short")
     faulty = True
 
 if not faulty:
@@ -27,4 +27,5 @@ if not faulty:
     else:
         print(f"{name}, you have entered illegal number of mines")
         faulty = True
-print(f"{name}, the board size is: {board_size}, number of mines is: {number_of_mines}")
+if not faulty:
+    print(f"{name}, the board size is: {board_size}, number of mines is: {number_of_mines}")
