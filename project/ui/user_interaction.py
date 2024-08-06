@@ -22,7 +22,7 @@ if not faulty:
 
 if not faulty:
     number_of_mines_input = int(input(f"{name}, for board size {board_size}, choose number of mines to allocate: "))
-    if 0 < number_of_mines_input <= (board_size / 2):
+    if 0 < number_of_mines_input <= ((board_size**2) / 2):
         number_of_mines = number_of_mines_input
     else:
         print(f"{name}, you have entered illegal number of mines")
